@@ -1,4 +1,7 @@
 node {
+	stage('Validate') {
+		echo 'Validating....'
+	}
 	stage('Build') {
 		echo 'Building....'
 	}
