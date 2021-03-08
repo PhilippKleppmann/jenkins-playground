@@ -1,4 +1,8 @@
 node {
+	stage('SCM') {
+		echo 'Gathering code from version control'
+		git branch: '${branch}', url: 'https://github.com/PhilippKleppmann/jenkins-playground.git'
+	}
 	stage('Validate') {
 		echo 'Validating....'
 	}
